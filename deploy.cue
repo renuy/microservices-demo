@@ -7,7 +7,7 @@ import (
 )
 
 dagger.#Plan & {
-	actions: test: {
+	actions: {
 		deploy: kapp.#Deploy & {
 			app:        "demo-app"
 			fs:         client.filesystem."./".read.contents
